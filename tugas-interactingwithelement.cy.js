@@ -1,5 +1,3 @@
-/// <reference types ="cypress"/>
-
 /// <reference types ='cypress' />
 
 describe('Working with input', () => {
@@ -18,5 +16,11 @@ describe('Working with input', () => {
 
     it('Should checkbox keep me sign in up', () => {
         cy.get('[type ="checkbox"]').check()
+    });
+
+    it('Should click sign in button', () => {
+        //cy.get('.btn').click() // Click on button
+        //cy.focused().click() // Click on el with focus
+        cy.contains('Sign in').click() // Click on first el containing 'Welcome'
     });
 });
