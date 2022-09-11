@@ -10,10 +10,10 @@ describe('Login with fixture data', function() {
             const password = user.password
             
             cy.get('#user-name').clear()
-            cy.get('#user-name').type('standard_user')
+            cy.get('#user-name').type(username)
 
             cy.get('#password').clear()
-            cy.get('#password').type('secret_sauce')
+            cy.get('#password').type(password)
 
             cy.get('#login-button').click()
 
@@ -39,13 +39,13 @@ describe('Login with fixture data', function() {
                 const postalCode = address.postalCode
 
                 cy.get('#first-name').clear()
-                cy.get('#first-name').type('Rina')
+                cy.get('#first-name').type(firstName)
     
                 cy.get('#last-name').clear()
-                cy.get('#last-name').type('Apriani')
+                cy.get('#last-name').type(lastName)
 
                 cy.get('#postal-code').clear()
-                cy.get('#postal-code').type('41161')
+                cy.get('#postal-code').type(postalCode)
     
                 cy.get('#continue').click()
              })
