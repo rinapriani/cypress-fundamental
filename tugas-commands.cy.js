@@ -1,4 +1,4 @@
-/// <reference types ='cypress' />
+/// <reference types ="cypress" />
 
 describe('Working with input', () => {
     it('visit the website', () => {
